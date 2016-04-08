@@ -1,8 +1,8 @@
 FROM python:3.5
 MAINTAINER https://github.com/sthysel/docker-youtube-dl
 
-RUN groupadd -g 1000 pirates
-RUN useradd --uid 1000 --gid 1000 pirate
+RUN groupadd -g __GID__ pirates
+RUN useradd --uid __UID__ --gid __GID__ pirate
 
 VOLUME /download
 WORKDIR /download
